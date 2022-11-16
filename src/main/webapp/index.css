@@ -1,0 +1,9 @@
+body {background-color: LightGray;margin:30px;}
+h2{ background-color: black; color: LightGray;padding:30px;}
+.button  {
+background-color:black
+color:LightGray;
+width:20%;
+}
+.button:hover {background-color: LightGray; color:black;}
+
