@@ -21,7 +21,7 @@ public class Update extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/EmpDB", "root", "Gowt@1708");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/EmpDB", "root", "");
             Statement st = con.createStatement();
             int rowsAffected = st.executeUpdate("update Employee set Name='"+name+"',Manager='"+man+"',level='"+level+"' where ID="+id+"");
             st.close();
